@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+        function ChgStyle()
+        {
+            x= document.getElementById("myh1")
+         x.style.color="rgb(94, 94, 238)";
+         x.style.font="50pt 'Arial Black'";
+         x.style.textAlign="center";
+        } 
+        function trophy()
+		{
+			document.getElementById("logo").src="trophy.png";
+		}      
+        function fifalogo()
+		{
+			document.getElementById("logo").src="FIFAlogo.png";
+		}
+     </script>		
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Cup and its History</title>
+<style>
+    body{background-color:rgb(216, 208, 197);}
+    h1{text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:24pt; color:rgb(94, 94, 238);}
+    h2{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans-Bold', 'Helvetica Neue', sans-serif; font-size: 20pt; color:rgb(94, 94, 238);}
+    h3{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt; color:#5e5eee;}
+    p{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 12pt;text-align: center; color:black;}
+    a{text-align: center; color:rgb(94, 94, 238); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    ul{list-style-type: none; text-align: center; color: black;}
+    li{text-align:center; color: black}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.listHorizontal {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size:20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+table{align-items: baseline;}
+.Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
+.Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(50, 50, 50); border-radius: 5px;}
+.Nav_Bar li {float: left;}
+.Nav_Bar li a {display: inline-block; color:black; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+.Nav_Bar a.Active {background-color:gray;}
+.Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:rgb(160, 160, 241);}
+.Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: white; min-width: 100px; z-index: 1; }
+.Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+.Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+</style>
+</head>
+<body>
+    <h1 id="myh1" onclick="ChgStyle()">FIFA WORLD CUP</h1>
+        <!--
+Click on the title "FIFA WORLD CUP" for it to enlarge.
+-->
+    <hr>
+    <p>   
+        <ul class="listHorizontal">
+            <div class="Nav_Bar">
+                <li class="Dropdown">
+                    <a href="Locations.txt">Locations</a>
+                      <div class="Dropdown_Content">
+                          <a href="stadiums.html">Stadiums</a>
+                      </div>
+            <li><a href="trophies.html">Trophies</a></li>
+            <li><a href="funfacts.html">Fun Facts</a></li>
+            <li><a href="topscorers.html">Top Goalscorers</a></li>
+            <li><a href="topassists.html">Top Assistants</a></li>
+            <li><a href="managers.html">Managers</a></li>
+            <li><a href="rosters.html">Rosters</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="champions.html">champions</a></li>
+        </ul>
+    </p>
+    <br>
+    <h2>Recognized as the most elite tournamnet worldwide. </h2>
+    <hr>
+    <p>Consists of 32 countries and hosted by a participating country every four years. </p>
+    <p>Qualifications for the FIFA Men's World Cup occur through smaller-scaled continental</p>
+    <p>tournaments gathering each nations fans. Once the nations have qualified, the World</p>
+    <p>Cup hosts experience fans from all over the world coming together for their love of</p>
+    <p> the beautiful game.</p>
+    <hr>
+    <br>
+    <p>Mouse over FIFA Logo for World Cup Trophy.</p>
+    <!--
+Mouse over FIFA Logo for World Cup Trophy.
+-->
+    <p>
+        <img src="FIFAlogo.png" id="logo" alt="logo" onmouseover="trophy()" onmouseleave="fifalogo()"/>
+    </p>
+</body>
+</html>
