@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<script>
+				function processForm()
+		{
+			var jsimages=document.getElementById("images")
+			var jscss=document.getElementById("css")
+			var jstables=document.getElementById("tables")
+			var jsforms=document.getElementById("forms")
+			if (jsimages.checked == false && jscss.checked == false && jstables.checked == false && jsforms.checked == false)
+			{
+				alert("Fun topic is required");
+			}
+			else if (document.getElementById("firstname").value=="")
+			{
+				alert("First name is required");
+				document.getElementById("firstname").focus();
+			}
+			else if (document.getElementById("lastname").value=="")
+			{
+				alert("Last name is required");
+				document.getElementById("lastname").focus();
+			}
+			else
+			{
+				return true;
+			}
+			return false;
+		}
+	</script>
+	<style>
+	td {padding-right:40px}
+	ul {list-style-type: none;}
+	</style>
+</head>
+<body>
+	<h1>MIS3690 Student Survey</h1>	
+	<p>Please complete the following survey.  You must answer each question.  When you are done,
+	    please click on the Submit button.</p>
+	<form action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post">
+		<tr><td>First Name: </td><td><input type="text" name="FirstName" size="30" /></td></tr>
+		<tr><td>Last Name: </td><td><input type="text" name="LastName" size="30"/></td></tr>
+		<br>
+		<br>
+		<tr><td>Gender: </td><td style="padding-left:30px">Male <input type="radio" name="gender" value="e"/> Female
+			<input type="radio" name="gender" value="p" /></td></tr>
+		<br>
+		<p>
+			What grade do you expect to receive?
+			<select name="grade">
+				<option value="vs">A+</option>
+				<option value="s">A</option>
+				<option value="n">A-</option>
+				<option value="d">B+</option>
+				<option value="vd">B</option>
+				<option value="vd">B-</option>
+				<option value="vd">C+</option>
+				<option value="vd">C</option>
+				<option value="vd">C-</option>
+				<option value="vd">D+</option>
+				<option value="vd">D</option>
+				<option value="vd">D-</option>
+				<option value="vd">F</option>
+			</select></p>
+		<table>
+			<tr>
+				<td>
+				<p>Which topics did you find to be fun?
+				</td>
+				<td>
+					<ul>
+						<li>
+						Images <input type="checkbox" name="img" value="images"/>
+						</li>
+						<li>
+						CSS <input type="checkbox" name="css" value="css" />
+						</li>
+						<li>
+						Tables <input type="checkbox" name="forms" value="forms" />
+						</li>
+						<li>
+						Forms <input type="checkbox" name="forms" value="forms" />
+						</li> 		
+						</ul>
+				</td>
+			</tr>
+		</table>
+		<p>Please add any comments you have:</p>
+<p><textarea name="comments" rows="5" cols="60"></textarea></p>
+<p style="text-align:left"><input type="submit" name="Submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset" /></p> 
+	</form>
+</body>
+</html>
