@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managers</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+body{background-color:rgb(216, 208, 197);}
+    h1{text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:30pt; color:rgb(94, 94, 238);}
+    h2{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans-Bold', 'Helvetica Neue', sans-serif; font-size: 30pt; color:rgb(94, 94, 238);}
+    h3{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt; color:#5e5eee;}
+    p{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt;text-align: center; color:black;}
+    a{text-align: center; color:rgb(94, 94, 238); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    ul{list-style-type: none; text-align: center; color: black;}
+    li{text-align:center; color: black}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.listHorizontal {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size:20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+table{align-items: baseline;}
+.Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
+.Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(206, 200, 200); border-radius: 5px;}
+.Nav_Bar li {float: left;}
+.Nav_Bar li a {display: inline-block; color:black; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+.Nav_Bar a.Active {background-color:gray;}
+.Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:rgb(160, 160, 241);}
+.Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: white; min-width: 100px; z-index: 1; }
+.Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+.Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+</style>
+</head>
+<body>
+    <h1>Managers</h1>
+    <hr>  
+        <div class= "Nav_Bar">
+            <ul class="listHorizontal">
+                <li><a href="index.html">Home</a></li>
+                <li class="Dropdown">
+                    <a href="Locations.html">Locations</a>
+                      <div class="Dropdown_Content">
+                          <a href="stadiums.html">Stadiums</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="topscorers.html">Top Goalscorers</a>
+                      <div class="Dropdown_Content">
+                          <a href="topassists.html">Top Assistants</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="managers.html">Managers</a>
+                        <div class="Dropdown_Content">
+                            <a href="rosters.html">Rosters</a>
+                        </div>
+            <li><a href="trophies.html">Trophies</a></li>
+            <li><a href="funfacts.html">Fun Facts</a></li>
+            <li class="Dropdown">
+                <a href="aboutus.html">About Us</a>
+                  <div class="Dropdown_Content">
+                      <a href="contact-us.html">Contact us</a>
+                      <a href="credits.html">Credits</a>
+                  </div>
+            </ul>
+        </div>
+    <br>
+<hr>
+<h2>Winners on and off the Field</h2>
+<p>Through the course of history, there are three men who have won the World Cup tittle as both Managers and Players. These men are the following:</p>
+<table>
+    <tr>
+        <td>
+            <h2>Mario Zagallo</h2>
+            <p>
+                Zagallo won the World Cup as a player in 1958 and 1962 and years later won as a manager in 1970 bringing him to a total of three world cup trophies.
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <img src="https://cdn.sportmob.com/resource/news/20210821_974167/item_5_9436.jpg?cache=1629693142" alt="zagacoach" width="300" class="left"/>
+                    <img src="https://www.thesun.co.uk/wp-content/uploads/2018/05/nintchdbpict000408822202.jpg" alt="zagaplayer" width="300" class="center"/>
+                </li>
+            </ul>
+    </tr>
+<tr>
+    <td>
+        <h2>Franz Beckenbauer</h2>
+        <p>
+            Beckenbauer won the World Cup as a player in 1974 and years later won as a manager in 1990 bringing him to a total of two world cup trophies.
+        </p>
+    </td>
+    <td>
+        <ul>
+            <li>
+                <img src="data:image/jpeg;base64,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" alt="franzc" width="300" class="left"/>
+                <img src="https://i.dailymail.co.uk/i/pix/2014/06/10/article-2654061-0A5B9695000005DC-600_964x642.jpg" alt="franzp" width="300" class="center"/>
+            </li>
+        </ul>
+</tr>
+<tr>
+    <td>
+        <h2>Didier Deschamps</h2>
+        <p>
+            Deschamps won the World Cup as a player in 1998 and years later won as a manager in 2018 bringing him to a total of two world cup trophies.
+
+        </p>
+    </td>
+    <td>
+        <ul>
+            <li>
+                <img src="https://www.worldsoccer.com/wp-content/uploads/2016/06/France-coach-Didier-Deschamps.png" alt="deschampsc" width="300" class="left"/>
+                <img src="https://pbs.twimg.com/media/DhwvwLSX0AApqR8.jpg" alt="deschampsp" width="300" class="center"/>
+            </li>
+        </ul>
+</tr>               
+</table>
+    <br>
+<hr>
+</body>
+</html> 

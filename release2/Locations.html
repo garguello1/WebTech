@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+body{background-color:rgb(216, 208, 197);}
+    h1{text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:30pt; color:rgb(94, 94, 238);}
+    h2{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans-Bold', 'Helvetica Neue', sans-serif; font-size: 30pt; color:rgb(94, 94, 238);}
+    h3{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt; color:#5e5eee;}
+    p{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt;text-align: center; color:black;}
+    a{text-align: center; color:rgb(94, 94, 238); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    ul{list-style-type: none; text-align: center; color: black;}
+    li{text-align:center; color: black}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.listHorizontal {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size:20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+table{align-items: baseline;}
+.Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
+.Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(206, 200, 200); border-radius: 5px;}
+.Nav_Bar li {float: left;}
+.Nav_Bar li a {display: inline-block; color:black; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+.Nav_Bar a.Active {background-color:gray;}
+.Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:rgb(160, 160, 241);}
+.Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: white; min-width: 100px; z-index: 1; }
+.Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+.Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+</style>
+</head>
+<body>
+    <h1>Locations</h1>
+    <hr>  
+        <div class= "Nav_Bar">
+            <ul class="listHorizontal">
+                <li><a href="index.html">Home</a></li>
+                <li class="Dropdown">
+                    <a href="Locations.html">Locations</a>
+                      <div class="Dropdown_Content">
+                          <a href="stadiums.html">Stadiums</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="topscorers.html">Top Goalscorers</a>
+                      <div class="Dropdown_Content">
+                          <a href="topassists.html">Top Assistants</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="managers.html">Managers</a>
+                        <div class="Dropdown_Content">
+                            <a href="rosters.html">Rosters</a>
+                        </div>
+            <li><a href="trophies.html">Trophies</a></li>
+            <li><a href="funfacts.html">Fun Facts</a></li>
+            <li class="Dropdown">
+                <a href="aboutus.html">About Us</a>
+                  <div class="Dropdown_Content">
+                      <a href="contact-us.html">Contact us</a>
+                      <a href="credits.html">Credits</a>
+                  </div>
+            </ul>
+        </div>
+    <br>
+<hr>
+<h2>Previous World Cup Hosts</h2>
+<p>The following represent the flag of the country that hosted the World Cup</p>
+<p>on the years stated as well as the logo that was used for that years tournament.</p>
+<table>
+    <tr>
+        <td>
+            <h2>Qatar 2022</h2>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <img src="https://i.redd.it/5b9chda287631.jpg" alt="qatar flag" width="200" class="left"/>
+                       <img alt="2022wc" src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190903171331-qatar-world-cup-emblem.jpg" width="200" class="center">
+                </li>
+            </ul>
+    </tr>
+    <tr>
+        <td>
+            <h2>Russia 2018</h2>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" alt="russia flag" width="200" class="left"/>
+                       <img alt="2018wc" src="https://i0.wp.com/99u.adobe.com/wp-content/uploads/sites/2/2018/06/wc-logo-composite.jpg?resize=%2C&quality=100&strip&ssl=1" width="200" class="center">
+                </li>
+            </ul>
+    </tr>
+    <tr>
+        <td>
+            <h2>Brazil 2014</h2>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <img src="https://cdn.britannica.com/47/6847-004-7D668BB0/Flag-Brazil.jpg" alt="brazil flag" width="200" class="left"/>
+                       <img alt="2014wc" src="https://www.si.edu/sites/default/files/newsdesk/press_releases/brazil-world-cup-2014-wallpaper_1402864884.jpg" width="200" class="center">
+                </li>
+            </ul>
+    </tr>             
+    <tr>
+        <td>
+            <h2>South Africa 2010</h2>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <img src="https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg" alt="SA flag" width="200" class="left"/>
+                        <img alt="2010wc" src="https://c4.wallpaperflare.com/wallpaper/825/158/538/sports-football-wallpaper-preview.jpg" class="center">
+                </li>
+            </ul>
+    </tr>
+</table>
+    <br>
+<hr>
+</body>
+</html> 

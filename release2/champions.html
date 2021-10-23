@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+body{background-color:rgb(216, 208, 197);}
+    h1{text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:30pt; color:rgb(94, 94, 238);}
+    h2{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans-Bold', 'Helvetica Neue', sans-serif; font-size: 30pt; color:rgb(94, 94, 238);}
+    h3{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt; color:#5e5eee;}
+    p{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt;text-align: center; color:black;}
+    a{text-align: center; color:rgb(94, 94, 238); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    ul{list-style-type: none; text-align: center; color: black;}
+    li{text-align:center; color: black}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.listHorizontal {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size:20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+table{align-items: baseline;}
+.Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
+.Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(206, 200, 200); border-radius: 5px;}
+.Nav_Bar li {float: left;}
+.Nav_Bar li a {display: inline-block; color:black; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+.Nav_Bar a.Active {background-color:gray;}
+.Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:rgb(160, 160, 241);}
+.Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: white; min-width: 100px; z-index: 1; }
+.Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+.Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+</style>
+</head>
+<body>
+    <h1>Champions</h1>
+    <hr>  
+        <div class= "Nav_Bar">
+            <ul class="listHorizontal">
+                <li><a href="index.html">Home</a></li>
+                <li class="Dropdown">
+                    <a href="Locations.html">Locations</a>
+                      <div class="Dropdown_Content">
+                          <a href="stadiums.html">Stadiums</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="topscorers.html">Top Goalscorers</a>
+                      <div class="Dropdown_Content">
+                          <a href="topassists.html">Top Assistants</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="managers.html">Managers</a>
+                        <div class="Dropdown_Content">
+                            <a href="rosters.html">Rosters</a>
+                        </div>
+            <li><a href="trophies.html">Trophies</a></li>
+            <li><a href="funfacts.html">Fun Facts</a></li>
+            <li class="Dropdown">
+                <a href="aboutus.html">About Us</a>
+                  <div class="Dropdown_Content">
+                      <a href="contact-us.html">Contact us</a>
+                      <a href="credits.html">Credits</a>
+                  </div>
+            </ul>
+        </div>
+    <br>
+<hr>
+<h2>Top 5 All-Time Countries</h2>
+<p>Click on the images of the teams celebrating to watch all of the nations World Cup Goals!</p>
+<table>
+    <tr>
+        <td>
+            <h2>Brazil (5)</h2>
+            <p>
+                1958, 1962, 1970, 1994, 2002
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/brazilc-logo-png-transparent.png" alt="brazil flag" width="200" class="left"/>
+<!--The following images of teams celebrating work as links-->
+                    <a href="https://www.youtube.com/watch?v=LWXMhpOkDVY">
+                       <img alt="brazil champions" src="https://i.ytimg.com/vi/O8dUhMGtUtw/maxresdefault.jpg" width="200" class="center">
+                    </a>
+                </li>
+            </ul>
+    </tr>
+<tr>
+    <td>
+        <h2>Germany (4)</h2>
+        <p>
+            1954, 1974, 1990, 2014
+        </p>
+    </td>
+    <td>
+        <ul>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" alt="germany flag" width="200" class="left"/>
+                <a href="https://www.youtube.com/watch?v=m3IP57jiD9w">
+                    <img alt="germany champions" src="http://i2.cdn.turner.com/cnn/dam/assets/140715121919-german-celebration-horizontal-gallery.jpg" class="center">
+                 </a>
+             </li>
+        </ul>
+</tr>
+<tr>
+    <td>
+        <h2>Italy (4)</h2>
+        <p>
+            1934, 1938, 1982, 2006
+        </p>
+    </td>
+    <td>
+        <ul>
+            <li>
+                <img src="https://www.flagcolorcodes.com/data/flag-of-italy-800x534.png" alt="italy flag" width="200" class="left"/>
+                <a href="https://www.youtube.com/watch?v=FcvJDKlF9_s">
+                    <img alt="italy champions" src="https://i.ytimg.com/vi/FcvJDKlF9_s/maxresdefault.jpg" class="center">
+                 </a>
+             </li>
+        </ul>
+</tr>               
+<tr>
+    <td>
+        <h2>Argentina (2)</h2>
+        <p>
+            1978, 1986
+        </p>
+    </td>
+    <td>
+        <ul>
+            <li>
+                <img src="https://cdn.britannica.com/69/5869-004-7D75CD05/Flag-Argentina.jpg" alt="argentina flag" width="200" class="left"/>
+                <a href="https://www.youtube.com/watch?v=NZHHWNDDNls">
+                    <img alt="argentina champions" src="https://i.dailymail.co.uk/i/pix/2012/02/09/article-2098771-01C6BA9900000578-995_1024x615_large.jpg" class="center">
+                 </a>
+             </li>
+        </ul>
+</tr>
+<tr>
+    <td>
+        <h2>France (2)</h2>
+        <p>
+            1998, 2018
+        </p>
+    </td>
+    <td>
+        <ul>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="france flag" width="200" class="left"/>
+                <a href="https://www.youtube.com/watch?v=oAY_a_B8f0M">
+                    <img alt="france champions" src="https://images.theconversation.com/files/227770/original/file-20180716-44082-1skj42d.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop" class="center">
+                 </a>
+             </li>
+        </ul>
+</tr>
+</table>
+    <br>
+<hr>
+</body>
+</html> 

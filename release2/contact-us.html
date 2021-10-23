@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script>
+            function processForm()
+    {
+        var jsimages=document.getElementById("images")
+        var jscss=document.getElementById("css")
+        var jstables=document.getElementById("tables")
+        var jsforms=document.getElementById("forms")
+        if (jsimages.checked == false && jscss.checked == false && jstables.checked == false && jsforms.checked == false)
+        {
+            alert("Fun topic is required");
+        }
+        else if (document.getElementById("firstname").value=="")
+        {
+            alert("First name is required");
+            document.getElementById("firstname").focus();
+        }
+        else if (document.getElementById("lastname").value=="")
+        {
+            alert("Last name is required");
+            document.getElementById("lastname").focus();
+        }
+        else
+        {
+            return true;
+        }
+        return false;
+    }
+</script>
+<style>
+body{background-color:rgb(216, 208, 197);}
+    h1{text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:30pt; color:rgb(94, 94, 238);}
+    h2{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans-Bold', 'Helvetica Neue', sans-serif; font-size: 30pt; color:rgb(94, 94, 238);}
+    h3{text-align:center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt; color:#5e5eee;}
+    p{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20pt;text-align: center; color:black;}
+    a{text-align: center; color:rgb(94, 94, 238); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    ul{list-style-type: none; text-align: left; color: black;}
+    li{text-align:left; color: black; font-size: 20pt}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.listHorizontal {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size:20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+table{align-items: baseline;}
+.Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
+.Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color: rgb(206, 200, 200); border-radius: 5px;}
+.Nav_Bar li {float: left;}
+.Nav_Bar li a {display: inline-block; color:black; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+.Nav_Bar a.Active {background-color:gray;}
+.Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color:rgb(160, 160, 241);}
+.Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color: white; min-width: 100px; z-index: 1; }
+.Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+.Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+</style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <hr>  
+        <div class= "Nav_Bar">
+            <ul class="listHorizontal">
+                <li><a href="index.html">Home</a></li>
+                <li class="Dropdown">
+                    <a href="Locations.html">Locations</a>
+                      <div class="Dropdown_Content">
+                          <a href="stadiums.html">Stadiums</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="topscorers.html">Top Goalscorers</a>
+                      <div class="Dropdown_Content">
+                          <a href="topassists.html">Top Assistants</a>
+                      </div>
+                <li class="Dropdown">
+                    <a href="managers.html">Managers</a>
+                        <div class="Dropdown_Content">
+                            <a href="rosters.html">Rosters</a>
+                        </div>
+            <li><a href="trophies.html">Trophies</a></li>
+            <li><a href="funfacts.html">Fun Facts</a></li>
+            <li class="Dropdown">
+                <a href="aboutus.html">About Us</a>
+                  <div class="Dropdown_Content">
+                      <a href="contact-us.html">Contact us</a>
+                      <a href="credits.html">Credits</a>
+                  </div>
+            </ul>
+        </div>
+    <br>
+<hr>
+<h1>Contact Us</h1>
+<p>Please complete the following survey.  You must answer each question.  When you are done,
+    please click on the Submit button.</p>
+<form action="http://wtspring13sec2.babson.edu/gordon/contact-us.php" method="post">
+    <br>
+    <br>
+    <p>
+        What Page is your question about?
+        <select name="grade">
+            <option value="vs">Home</option>
+            <option value="s">Locations</option>
+            <option value="n">Stadiums</option>
+            <option value="d">Top Goalscorers</option>
+            <option value="vd">Top Assistants</option>
+            <option value="vd">Managers</option>
+            <option value="vd">Rosters</option>
+            <option value="vd">Trophies</option>
+            <option value="vd">Fun Facts</option>
+            <option value="vd">About Us</option>
+            <option value="vd">Credits</option>
+            <option value="vd">Contact Us</option>
+            <option value="vd">Other</option>
+        </select></p>
+    <p>Please add any comments, questions, or recommendations you may have:</p>
+<p><textarea name="comments" rows="5" cols="60"></textarea></p>
+<p style="text-align:left"><input type="submit" name="Submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset" /></p> 
+</form>
+</body>
+</html>
