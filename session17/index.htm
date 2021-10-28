@@ -7,7 +7,12 @@
 
 	<title>Catch Me</title>
 	<script>
-	
+			// <![CDATA[  
+            var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+	if (mobile) {  
+        	document.location="mcatch.htm"
+	}
+	// ]]>
 	var btnWords = new Array("Click Me","Move Me","Click Here","Button","Next");
 	var caught=0;
 	function chgButton() 
@@ -32,12 +37,6 @@
 	{
 		caught=1;
 	}
-		// <![CDATA[  
-		var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
-	if (mobile) {  
-        	document.location="mcatch.htm"
-	}
-	// ]]>
 	</script>	
 </head>
 <body onload="chgButton()">
